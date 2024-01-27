@@ -3,26 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to the AI generator</h1>
+      <h1>Welcome to the AI recipe generator</h1>
       <main>
+        <h3>
+          Not sure what to cook for dinner?
+          <br />
+          Let SheCode API help you!
+        </h3>
         <form id="recipe-generator-form">
           <input
             type="text"
             autocomplete="off"
             autofocus="on"
             required
-            placeholder="Enter your keyword here"
+            placeholder="Enter your main ingredient here"
             class="keyword-search-bar"
+            id="userInput"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div id="recipe"></div>
+        <div class="response">
+          <div id="generated-recipe-intro"></div>
+          <div id="recipe"></div>
+        </div>
       </main>
       <footer>
         This project was coded by
