@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Welcome to the AI generator</h1>
-
-    <form>
-      <input
-        type="text"
-        autocomplete="off"
-        autofocus="on"
-        required
-        placeholder="Enter your keyword here"
-      />
-      <input type="submit" />
-    </form>
-    <div>The recipe will go here</div>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/cle-amato" target="_blank">
-        Clementina Amato</a
-      >
-      and is
-      <a
-        href="https://github.com/cle-amato/ai-generator-project"
-        target="_blank"
-      >
-        open-sourced on Github</a
-      >. Hosted on
-      <a
-        href="https://ai-generator-project-clementina.netlify.app/"
-        target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+    <div class="container">
+      <h1>Welcome to the AI generator</h1>
+      <main>
+        <form>
+          <input
+            type="text"
+            autocomplete="off"
+            autofocus="on"
+            required
+            placeholder="Enter your keyword here"
+            class="keyword-search-bar"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">The recipe will go here</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/cle-amato" target="_blank">
+          Clementina Amato</a
+        >
+        and is
+        <a
+          href="https://github.com/cle-amato/ai-generator-project"
+          target="_blank"
+        >
+          open-sourced on Github</a
+        >. Hosted on
+        <a
+          href="https://ai-generator-project-clementina.netlify.app/"
+          target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
