@@ -17,19 +17,21 @@
           <br />
           Let SheCodes API help you!
         </h3>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            autocomplete="off"
-            autofocus="on"
-            required
-            placeholder="Enter your main ingredient here"
-            class="keyword-search-bar"
-            id="userInput"
-          />
-          <input type="submit" class="submit-button" />
-          <small>i.e. Salmon, tofu or broccoli</small>
-        </form>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              autocomplete="off"
+              autofocus="on"
+              required
+              placeholder="Enter your main ingredient here"
+              class="keyword-search-bar"
+              id="userInput"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. Salmon, tofu or broccoli</div>
+        </div>
         <div class="response hidden" id="response-container">
           <div id="recipe"></div>
         </div>
