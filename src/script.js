@@ -14,7 +14,7 @@ function generateRecipe(event) {
   let userInputValue = userInputElement.value;
   let apiKey = "ca0094f431ob9cbfef2ed6ce95bt0cc7";
   let context =
-    "You are a food expert and you love to create simple and short recipes. Provide 3 ideas of recipe in a bullet point format in HTML. Only provide titles, not ingredients or directions.";
+    "You are a food expert and you love to create simple and short recipes. Provide 3 ideas of recipe in a bullet point format using html such as <ul><li>Recipe 1</li><li>Recipe 2</li><li>Recipe 3</li></ul>Here are . Only provide titles, not ingredients or directions.";
   let prompt = `Provide 3 recipes titles that include ${userInputValue}`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
